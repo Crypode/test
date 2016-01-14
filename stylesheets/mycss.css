@@ -10,11 +10,11 @@ p {
 }
 
 .left {
-    width: 400px;
+    width: 300px;
     background-color: red;
 }
 
 .right {
-    margin-left: 500px;
+    width: 300px;
     background-color: #abcd00;
 }
