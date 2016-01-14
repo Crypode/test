@@ -11,10 +11,12 @@ p {
 
 .left {
     width: 300px;
+    float: left;
     background-color: red;
 }
 
 .right {
     width: 300px;
+    float: right;
     background-color: #abcd00;
 }
