@@ -8,3 +8,13 @@ p {
     font-family: serif;
     font-size: 30px;
 }
+
+.left {
+    width: 400px;
+    background-color: red;
+}
+
+.right {
+    margin-left: 500px;
+    background-color: #abcd00;
+}
