@@ -22,18 +22,18 @@
 # -----
 # Build
 
-permalink: pretty
+#permalink: pretty
 
-gems:
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-feed
+#gems:
+#  - jekyll-sitemap
+#  - jekyll-seo-tag
+#  - jekyll-feed
 
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - LICENCE
+#exclude:
+#  - Gemfile
+#  - Gemfile.lock
+#  - README.md
+#  - LICENCE
 
 collections:
   docs:
@@ -68,6 +68,6 @@ defaults:
 # -----------
 # CloudCannon
 
-types:
-  - minor
-  - major
+#types:
+#  - minor
+#  - major
