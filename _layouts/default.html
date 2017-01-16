@@ -6,10 +6,9 @@
 	</head>
 
 	<body>
-		<header>
-			<nav {% if site.show_full_navigation %}class="full-navigation"{% endif %}>
+			<div {% if site.show_full_navigation %}class="full-navigation"{% endif %}>
 				<ul>
-					<li class="nav-item top-level {% if page.url == '/' %}current{% endif %}">
+					<li>
 						{% assign home = site.html_pages | where: 'url', '/' | first %}
 						<a href="{{ site.baseurl }}/">{{ home.title }}</a>
 					</li>
@@ -18,21 +17,20 @@
 				<ul>
 					{% assign grouped = site.docs | group_by: 'category' %}
 					{% for group in grouped %}
-						<li class="nav-item top-level {% if group.name == page.category %}current{% endif %}">
+						<li>
 							{% assign items = group.items | sort: 'order' %}
 							<a href="{{ items.first.url }}">{{ group.name }}</a>
 							<ul>
 								{% for item in items %}
-									<li class="nav-item"><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
+								<li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
 								{% endfor %}
 							</ul>
 						</li>
 					{% endfor %}
 				</ul>
-			</nav>
-		</header>
+			</div>
 
-		<section class="main">
+		<!--<section class="main">
 			<div class="page-header">
 				<h2>{% if page.category %}{{ page.category }}{% else %}{{ site.title }}{% endif %}</h2>
 				<h3>{{ page.title }}</h3>
@@ -40,6 +38,6 @@
 			<article class="content">
 				{{ content }}
 			</article>
-		</section>
+		</section>-->
 	</body>
 </html>
