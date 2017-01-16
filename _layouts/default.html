@@ -12,7 +12,6 @@
 					{% for group in grouped %}
 						<li>
 							{% assign items = group.items | sort: 'order' %}
-							<a href="{{ items.first.url }}">{{ group.name }}</a>
 							<ul>
 								{% for item in items %}
 								<li><a href="{{ item.url }}">{{ item.title }}</a></li>
