@@ -50,10 +50,10 @@
 				</ul>
 
 				<ul>
-					{% assign grouped = site.docs | group_by: 'category' %}
+					{% assign grouped = site.docs %}
 					{% for group in grouped %}
 						<li class="nav-item top-level {% if group.name == page.category %}current{% endif %}">
-							{% assign items = group.items | sort: 'order' %}
+							{% assign items = group.items %}
 							<a href="{{ site.baseurl }}{{ items.first.url }}">{{ group.name }}</a>
 							<ul>
 								{% for item in items %}
