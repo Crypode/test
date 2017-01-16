@@ -13,12 +13,6 @@
 
 	<body>
 		<header>
-			<h1>
-				<a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/emblem.svg" width="40" height="40" alt="{{ site.title }} logo"></a>
-				{{ site.title }}
-				<button type="button" class="open-nav" id="open-nav"></button>
-			</h1>
-
 			<nav {% if site.show_full_navigation %}class="full-navigation"{% endif %}>
 				<ul>
 					<li class="nav-item top-level {% if page.url == '/' %}current{% endif %}">
